@@ -16,6 +16,11 @@ Mit Weka ließen sich gute Ergebnisse (größtenteils 80-90%) erzielen. Ausnahme
 
 Die Visualisierung der Daten kann auf 3 Weisen geschehen:
 
-Visualize_Data.py
+Visualize_Data.py (VISUALISIERUNG DER GEGLÄTTETEN ROHDATEN)
+
 
 ![Alt text](./images/cleaned_raw_data_backhand_tennis.png?raw=true "Title")
+
+(VISUALISIERUNG DER ROHDATEN)
+
+![Alt text](./images/raw_data_backhand_tennis.png?raw=true "Title")
