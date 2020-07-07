@@ -18,4 +18,4 @@ Die Visualisierung der Daten kann auf 3 Weisen geschehen:
 
 Visualize_Data.py
 
-![Alt text](./images/cleaned_raw_data_backhand_tennis.jpg?raw=true "Title")
+![Alt text](./images/cleaned_raw_data_backhand_tennis.png?raw=true "Title")
