@@ -16,11 +16,21 @@ Mit Weka ließen sich gute Ergebnisse (größtenteils 80-90%) erzielen. Ausnahme
 
 Die Visualisierung der Daten kann auf 3 Weisen geschehen:
 
-Visualize_Data.py (VISUALISIERUNG DER GEGLÄTTETEN ROHDATEN)
+Visualize_Data.py (VISUALISIERUNG DER ROHDATEN)
 
+![Alt text](./images/raw_data_backhand_tennis.png?raw=true "Title")
+
+(VISUALISIERUNG DER GEGLÄTTETEN ROHDATEN) Das Aussortieren der "Ruhephase" ist deutlich zu erkennen
 
 ![Alt text](./images/cleaned_raw_data_backhand_tennis.png?raw=true "Title")
 
-(VISUALISIERUNG DER ROHDATEN)
 
-![Alt text](./images/raw_data_backhand_tennis.png?raw=true "Title")
+Visualize_Statistical_Methods.py (VISUALISIERUNG DER STATISTISCHEN METHODEN)
+
+![Alt text](./images/Statistical_Methods_datasets_backhand_tennis.png?raw=true "Title")
+
+
+
+compare_statistical_Methods.py (VERGLEICH DER STATISTISCHEN METHODEN)
+
+![Alt text](./images/Statistical_Methods_datasets_backhand_tennis_Comparison.png?raw=true "Title")
