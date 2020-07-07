@@ -31,6 +31,11 @@ Visualize_Statistical_Methods.py (VISUALISIERUNG DER STATISTISCHEN METHODEN)
 
 
 
-compare_statistical_Methods.py (VERGLEICH DER STATISTISCHEN METHODEN)
+compare_statistical_Methods.py (DIFFERENZ DER STATISTISCHEN METHODEN ZWEIER DATENSÄTZE)
 
 ![Alt text](./images/Statistical_Methods_datasets_backhand_tennis_Comparison.png?raw=true "Title")
+
+
+WEKA-ERGEBNIS DURCHSCHNITTLICH BEI 80-90%
+![Alt text](./images/Weka_Ergebnis_Backhand_WindowSize_5.png?raw=true "Title")
+
