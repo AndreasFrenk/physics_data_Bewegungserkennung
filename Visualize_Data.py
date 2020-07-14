@@ -50,17 +50,6 @@ def visualize_data(datasets, accPos,separate_data_visualization,show_3D, pattern
             axes[1].legend()
             axes[2].legend()
 
-            # axes[0].plot(X, alpha=0.7, label="accX {}".format(position))
-            # axes[0].plot(Y, alpha=0.7, label="accY {}".format(position))
-            # axes[0].plot(Z, alpha=0.7, label="accZ {}".format(position))
-            # axes[0].plot(acc_Total, alpha=0.7, label="accTotal {}".format(position))
-
-            # axes[0].set_title("Alles in allem")
-            # axes[0].legend()
-            # axes[1].legend()
-            # axes[2].legend()
-            # axes[3].legend()
-
 
         else:
             axes[0].plot(X, alpha=0.7, label="accX")
@@ -77,18 +66,5 @@ def visualize_data(datasets, accPos,separate_data_visualization,show_3D, pattern
     plt.show()
 
 
-# movement_v3_raw = pd.read_csv('./relevant_data/AlexisGestures/Backhand Tennis_3.csv')
-# movement_v4_raw = pd.read_csv('./relevant_data/AlexisGestures/Backhand Tennis_4.csv')
-
-# movement_v3_raw_clean = pd.read_csv('./relevant_data/Test/Alexis/Backhand Tennis/raw_cleaned/raw_data_clean_Backhand Tennis_Alexis_3.csv')
-# movement_v4_raw_clean = pd.read_csv('./relevant_data/Test/Alexis/Backhand Tennis/raw_cleaned/raw_data_clean_Backhand Tennis_Alexis_4.csv')
-
-# visualize_data([movement_v3_raw_clean, movement_v4_raw_clean],
-# False, True, False, ['Backhand Tennis', 'Backhand Tennis'], 'Alexis')
-
-# visualize_data([movement_v3_raw, movement_v4_raw],
-# False, True, False, ['Backhand Tennis', 'Backhand Tennis'], 'Alexis')
-
 fulldatastream = pd.read_csv('./fulldatastream.csv')
 
-# visualize_data([fulldatastream], False, True, False, ['Fulldatastream'], 'Alexis')
