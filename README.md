@@ -39,3 +39,5 @@ compare_statistical_Methods.py (DIFFERENZ DER STATISTISCHEN METHODEN ZWEIER DATE
 WEKA-ERGEBNIS DURCHSCHNITTLICH BEI 80-90%
 ![Alt text](./images/Weka_Ergebnis_Backhand_WindowSize_5.PNG?raw=true "Title")
 
+
+Des Weiteren finden sich hier weitere CSV-Dateien, welche das Ergebnis der Aufteilung eines großen Datensatzes mit mehreren Bewegungen sind. Dabei enthält das Ergebnis jeweils nur eine Bewegung.
