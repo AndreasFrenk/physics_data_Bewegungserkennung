@@ -1,43 +1,47 @@
 # physics_data_Bewegungserkennung
 
-Es werden die Daten von https://github.com/makeabilitylab/signals/tree/master/Projects/GestureRecognizer/GestureLogs genutzt. Dabei geht es um die Erkennung der Bewegung.
 
-Dieses Repository enthält bereits alle Test- und Trainingsdaten. Zunächst wurden die Daten geglättet bzw. bereinigt. Dabei wurden die Ruhephasen der Bewegung, d.h. in Zeitintervalle, in denen "nichts passiert", werden aussortiert (s. clean_raw_data_physics.py).
+The data from https://github.com/makeabilitylab/signals/tree/master/Projects/GestureRecognizer/GestureLogs are used. It is about the detection of the movement.
 
-Dann wurden die Daten in 3 Kategorien unterteilt. Es gibt WindowSize 5,10 und 20. Dabei werden jeweils 5, 10 oder 20 Datensätze zusammengefasst. Die statistischen Methoden, die dabei verwendet worden sind, sind:
+This repository already contains all test and training data. First, the data was smoothed or adjusted. The rest phases of the movement, i.e. in time intervals in which "nothing happens" are sorted out (see clean_raw_data_physics.py).
 
-Durchschnittswert, Standardabweichung, Varianz, Median, Minimalwert, Maximalwert, Durchschnittliche Absolute Abweichung vom Mittelwert
+Then the data was divided into 3 categories. There are WindowSize 5, 10 and 20. In each case 5, 10 or 20 data records are combined. The statistical methods that have been used are:
 
-Das Schreiben der Testdaten erfolgt in clean_data_to_statistical_methods_physics.py. Das Schreiben der Trainingsdaten erfolgt in create_training_data_physics_statistical_methods.py.
+Average value, standard deviation, variance, median, minimum value, maximum value, average absolute deviation from the mean
 
-Es liegen insgesamt 5 Nutzer und 3 Bewegungen (Backhand Tennis, Midair-S, Shake) vor. Jeder Nutzer hat 5 Datensätze dieser Bewegungen. 3 von den 5 Datensätzen wurden für die Trainingsdaten und 2 für die Testdaten ausgewählt.
+The test data is written in clean_data_to_statistical_methods_physics.py. The training data is written in create_training_data_physics_statistical_methods.py.
 
-Mit Weka ließen sich gute Ergebnisse (größtenteils 80-90%) erzielen. Ausnahme dabei war Bryans Bewegung, wobei dies auch nur ein- bis zweimal vorkam.
+There are a total of 5 users and 3 movements (backhand tennis, midair-S, shake). Each user has 5 records of these movements. 3 of the 5 data sets were selected for the training data and 2 for the test data.
 
-Die Visualisierung der Daten kann auf 3 Weisen geschehen:
+Good results (mostly 80-90%) could be achieved with Weka. The exception was Bryan's movement, although this only happened once or twice.
 
-Visualize_Data.py (VISUALISIERUNG DER ROHDATEN)
+The data can be visualized in 3 ways:
+
+Visualize_Data.py (Visualization of raw data)
 
 ![Alt text](./images/raw_data_backhand_tennis.png?raw=true "Title")
 
-(VISUALISIERUNG DER GEGLÄTTETEN ROHDATEN) Das Aussortieren der "Ruhephase" ist deutlich zu erkennen
+(Visualization of the cleaned raw data) 
+The sorting out of the "resting phase" can be clearly seen
 
 ![Alt text](./images/cleaned_raw_data_backhand_tennis.png?raw=true "Title")
 
 
-Visualize_Statistical_Methods.py (VISUALISIERUNG DER STATISTISCHEN METHODEN)
+Visualize_Statistical_Methods.py (Visualization of the statistical methods)
 
 ![Alt text](./images/Statistical_Methods_datasets_backhand_tennis.png?raw=true "Title")
 
 
 
-compare_statistical_Methods.py (DIFFERENZ DER STATISTISCHEN METHODEN ZWEIER DATENSÄTZE)
+compare_statistical_Methods.py (difference of the statistical methods between two
+datasets)
 
 ![Alt text](./images/Statistical_Methods_datasets_backhand_tennis_Comparison.png?raw=true "Title")
 
 
-WEKA-ERGEBNIS DURCHSCHNITTLICH BEI 80-90%
+WEKA-RESULT ON AVERAGE between 80-90%
 ![Alt text](./images/Weka_Ergebnis_Backhand_WindowSize_5.PNG?raw=true "Title")
 
 
-Des Weiteren finden sich hier weitere CSV-Dateien, welche das Ergebnis der Aufteilung eines großen Datensatzes mit mehreren Bewegungen sind. Dabei enthält das Ergebnis jeweils nur eine Bewegung.
+
+There are also other CSV files here, which are the result of splitting a large data set with several movements. The result contains only one movement at a time.
