@@ -1,7 +1,8 @@
 # physics_data_Bewegungserkennung
 
+The goal of this project was to identify certain movement patterns that were recorded by the user. The basic idea was that by applying different statistical methods to the data you can recognize the recorded movement. The statistical methods were first applied in Python and then we analyzed that data in WEKA, which is a perfect tool for this kind of task.
 
-The data from https://github.com/makeabilitylab/signals/tree/master/Projects/GestureRecognizer/GestureLogs are used. It is about the detection of the movement.
+The data from https://github.com/makeabilitylab/signals/tree/master/Projects/GestureRecognizer/GestureLogs are used.
 
 This repository already contains all test and training data. First, the data was smoothed or adjusted. The rest phases of the movement, i.e. in time intervals in which "nothing happens" are sorted out (see clean_raw_data_physics.py).
 
